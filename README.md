@@ -1,5 +1,7 @@
 # JournalApp
-Andela 7 days challenge
+Andela ALC 3.0 7 days challenge
+
+[Download App](https://github.com/Oluflourish/JournalApp/blob/master/app-debug.apk)
 
 ![project_1](https://github.com/Oluflourish/JournalApp/blob/master/screenshots/1.png)
 ![project_1](https://github.com/Oluflourish/JournalApp/blob/master/screenshots/2.png)
@@ -12,7 +14,3 @@ Andela 7 days challenge
 ![project_1](https://github.com/Oluflourish/JournalApp/blob/master/screenshots/8.png)
 ![project_1](https://github.com/Oluflourish/JournalApp/blob/master/screenshots/9.png)
 ![project_1](https://github.com/Oluflourish/JournalApp/blob/master/screenshots/10.png)
-
-
-
-[Download App](app.apk)
