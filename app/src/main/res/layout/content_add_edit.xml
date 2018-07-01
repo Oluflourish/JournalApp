@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.ContentActivity"
+    tools:showIn="@layout/activity_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_margin">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-light"
+            android:hint="Title"
+            android:textColor="@color/note_list_text"
+            android:textColorHint="@color/input_register_hint"
+            android:textSize="@dimen/note_title"
+            android:inputType="textCapSentences"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif-light"
+            android:hint="Enter note here"
+            android:lineSpacingExtra="@dimen/line_spacing"
+            android:inputType="textMultiLine|textCapSentences"
+            android:nestedScrollingEnabled="true"
+            android:textColor="@color/note_list_text"
+            android:textColorHint="@color/input_register_hint"
+            android:textSize="@dimen/note_content" />
+
+    </RelativeLayout>
+</ScrollView>

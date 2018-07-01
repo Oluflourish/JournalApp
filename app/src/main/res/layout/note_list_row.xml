@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="@dimen/dimen_8">
+
+        <TextView
+            android:id="@+id/dot"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dot_height"
+            android:layout_marginRight="@dimen/dot_margin_right"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/dot_text_size" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timestamp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textColor="@color/note_list_text"
+            android:textSize="16dp"
+            tools:text="Note Title Comes here " />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timestamp"
+            android:textColor="@color/note_list_text"
+            android:maxLines="10"
+            android:textSize="14dp"
+            tools:text="Note Content Comes here" />
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:background="@drawable/rounded_square_grey">
+
+            <ImageView
+                android:layout_marginRight="4dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_access_time_white_24dp"/>
+
+            <TextView
+                android:layout_marginRight="4dp"
+                android:gravity="center_vertical"
+                android:layout_below="@id/note"
+                android:id="@+id/timestamp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/dot"
+                android:textColor="#232323"
+                android:textSize="12sp"
+                tools:text="Jan 10, 4:00pm" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
